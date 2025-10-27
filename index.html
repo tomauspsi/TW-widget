@@ -5,86 +5,85 @@
   <title>Market Overview Widget</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <style>
-    /* Questo CSS è FONDAMENTALE */
     html, body {
       background: #0F0F0F;
       margin: 0;
+      padding: 0;
       height: 100%;
+      width: 100%;
     }
   </style>
 </head>
 <body>
 <div class="tradingview-widget-container" style="height: 100%; width: 100%;">
-  <div class="tradingview-widget-container__widget" style="height: 100%; width: 100%;"></div>
+  <div class="tradingview-widget-container__widget" style="height: calc(100% - 32px); width: 100%;"></div>
   <div class="tradingview-widget-copyright">
-    <a href="https://it.tradingview.com" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a>
+    <a href="https://it.tradingview.com" rel="noopener nofollow" target="_blank">
+      <span class="blue-text">Track all markets on TradingView</span>
+    </a>
   </div>
+  
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
-    "colorTheme": "dark",
-    "locale": "it",
-    "width": "100%",
-    "height": "100%",
-    "isTransparent": true,
-    "backgroundColor": "#0F0F0F",
-    "showSymbolLogo": true,
-    "showChart": true,
-    "showFloatingTooltip": false,
-    "dateRange": "12M",
-    
-    /* Stile Glow Chart */
-    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-    "gridLineColor": "rgba(240, 243, 250, 0)",
-    "scaleFontColor": "#DBDBDB",
-    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-
-    /* La tua Watchlist Completa */
-    "tabs": [
-      {
-        "title": "Portafoglio Hold",
-        "symbols": [
-          { "s": "NASDAQ:XAIX", "d": "XAIX" },
-          { "s": "NASDAQ:SMH", "d": "SMH" },
-          { "s": "XETR:LYP6", "d": "Amundi" }
-        ]
-      },
-      {
-        "title": "Portafoglio Sell",
-        "symbols": [
-          { "s": "XETR:SAP", "d": "SAP" },
-          { "s": "XETR:RHM", "d": "Rheinmetall" }
-        ]
-      },
-      {
-        "title": "Index",
-        "symbols": [
-          { "s": "FXOPEN:SPXM", "d": "S&P 500" },
-          { "s": "TVC:FTMIB", "d": "FTMIB" },
-          { "s": "FOREXCOM:NSXUSD", "d": "NASDAQ" },
-          { "s": "TVC:NI225", "d": "NIKKEI" }
-        ]
-      },
-      {
-        "title": "Azioni",
-        "symbols": [
-          { "s": "NASDAQ:AAPL", "d": "Apple" },
-          { "s": "NASDAQ:NVDA", "d": "NVIDIA" }
-        ]
-      },
-      {
-        "title": "Commodities",
-        "symbols": [
-          { "s": "TVC:GOLD", "d": "Gold" },
-          { "s": "TVC:USOIL", "d": "USOIL" }
-        ]
-      }
-    ]
-  }
+  "colorTheme": "dark",
+  "locale": "it",
+  "width": "100%",
+  "height": "100%",
+  "isTransparent": true,
+  "showSymbolLogo": true,
+  "showChart": true,
+  "showFloatingTooltip": false,
+  "dateRange": "12M",
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "rgba(219, 219, 219, 1)",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Portafoglio Hold",
+      "symbols": [
+        {"s": "NASDAQ:XAIX", "d": "XAIX"},
+        {"s": "NASDAQ:SMH", "d": "SMH"},
+        {"s": "XETR:LYP6", "d": "Amundi"}
+      ]
+    },
+    {
+      "title": "Portafoglio Sell",
+      "symbols": [
+        {"s": "XETR:SAP", "d": "SAP"},
+        {"s": "XETR:RHM", "d": "Rheinmetall"}
+      ]
+    },
+    {
+      "title": "Index",
+      "symbols": [
+        {"s": "FOREXCOM:SPXUSD", "d": "S&P 500"},
+        {"s": "TVC:FTMIB", "d": "FTMIB"},
+        {"s": "FOREXCOM:NSXUSD", "d": "NASDAQ"},
+        {"s": "TVC:NI225", "d": "NIKKEI"}
+      ]
+    },
+    {
+      "title": "Azioni",
+      "symbols": [
+        {"s": "NASDAQ:AAPL", "d": "Apple"},
+        {"s": "NASDAQ:NVDA", "d": "NVIDIA"}
+      ]
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {"s": "TVC:GOLD", "d": "Gold"},
+        {"s": "OANDA:XAUUSD", "d": "Gold USD"}
+      ]
+    }
+  ]
+}
   </script>
 </div>
 </body>
