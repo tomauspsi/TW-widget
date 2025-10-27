@@ -1,33 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>TradingView Rheinmetall & SAP</title>
-</head>
-<body style="margin:0; background:#0F0F0F;">
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright">
-      <a href="https://www.tradingview.com/symbols/LSX-703000/" target="_blank">Rheinmetall</a> and
-      <a href="https://www.tradingview.com/symbols/LSX-716460/" target="_blank">SAP stock price</a> by TradingView
-    </div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text">Market summary</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+  {
+  "colorTheme": "dark",
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showSymbolLogo": true,
+  "backgroundColor": "#0F0F0F",
+  "support_host": "https://www.tradingview.com",
+  "width": "100%",
+  "height": "100%",
+  "symbolsGroups": [
     {
-      "lineWidth": 2,
-      "lineType": 0,
-      "chartType": "area",
-      "backgroundColor": "#0F0F0F",
-      "colorTheme": "dark",
+      "name": "Indices",
       "symbols": [
-        ["Rheinmetall","LSX:703000|1D"],
-        ["SAP","LSX:716460|1D"]
-      ],
-      "autosize": true,
-      "locale": "en"
+        {
+          "name": "NASDAQ:XAIX",
+          "displayName": "XAIX"
+        },
+        {
+          "name": "NASDAQ:SMH",
+          "displayName": "SMH"
+        },
+        {
+          "name": "XETR:LYP6",
+          "displayName": "Amundi"
+        },
+        {
+          "name": "XETR:RHM",
+          "displayName": "RHM"
+        },
+        {
+          "name": "XETR:SAP",
+          "displayName": "SAP"
+        },
+        {
+          "name": "FXOPEN:SPXM",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "TVC:FTMIB",
+          "displayName": "FTMIB"
+        },
+        {
+          "name": "IG:NASDAQ",
+          "displayName": "NASDAQ"
+        },
+        {
+          "name": "SPREADEX:NIKKEI",
+          "displayName": "NIKKEI"
+        },
+        {
+          "name": "NASDAQ:AAPL",
+          "displayName": "Apple"
+        },
+        {
+          "name": "NASDAQ:NVDA",
+          "displayName": "nVidia"
+        },
+        {
+          "name": "TVC:GOLD",
+          "displayName": "GOLD"
+        },
+        {
+          "name": "BMV:REMX",
+          "displayName": "Rare Earth"
+        },
+        {
+          "name": "TVC:USOIL",
+          "displayName": "Oil"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "symbols": [
+        {
+          "name": "BMFBOVESPA:ISP1!",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "BMFBOVESPA:EUR1!",
+          "displayName": "Euro"
+        },
+        {
+          "name": "CMCMARKETS:GOLD",
+          "displayName": "Gold"
+        },
+        {
+          "name": "PYTH:WTI3!",
+          "displayName": "WTI Crude Oil"
+        },
+        {
+          "name": "BMFBOVESPA:CCM1!",
+          "displayName": "Corn"
+        }
+      ]
+    },
+    {
+      "name": "Bonds",
+      "symbols": [
+        {
+          "name": "EUREX:FGBL1!",
+          "displayName": "Euro Bund"
+        },
+        {
+          "name": "EUREX:FBTP1!",
+          "displayName": "Euro BTP"
+        },
+        {
+          "name": "EUREX:FGBM1!",
+          "displayName": "Euro BOBL"
+        }
+      ]
+    },
+    {
+      "name": "Forex",
+      "symbols": [
+        {
+          "name": "FX:EURUSD",
+          "displayName": "EUR to USD"
+        },
+        {
+          "name": "FX:GBPUSD",
+          "displayName": "GBP to USD"
+        },
+        {
+          "name": "FX:USDJPY",
+          "displayName": "USD to JPY"
+        },
+        {
+          "name": "FX:USDCHF",
+          "displayName": "USD to CHF"
+        },
+        {
+          "name": "FX:AUDUSD",
+          "displayName": "AUD to USD"
+        },
+        {
+          "name": "FX:USDCAD",
+          "displayName": "USD to CAD"
+        }
+      ]
     }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-</body>
-</html>
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
